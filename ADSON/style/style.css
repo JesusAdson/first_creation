@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 1152px;
+
+}
+
+nav{
+    width: 80%;
+    height: 50px;
+    margin: auto; /* centralizou a parada*/
+    margin-top: 15px;
+}
+
+
+.burguer{
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
+    cursor: pointer;
+    margin-top: 15%;
+}
+.burguer div{
+    width: 50px;
+    height: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.x{
+    display: none;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.x div{
+    width: 40px;
+    height: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+.l1{transform: rotate(-45deg) translate(-5px, 6px);}
+.l2{opacity: 0;}
+.l3{transform: rotate(45deg) translate(-5px, -6px);}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.brand {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.navLinks{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.navLinks li{
+    list-style: none;
+}
+
+.navLinks li a{
+    border: 1px 2px #262426;
+    text-decoration: none;
+    color: red;
+}
+
+.navLinks li:hover{
+    border-bottom: 2px solid red;
+}
+
+.nav-active{
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+
+.burguer-deactive{
+    margin-top: 5%;
+    width: 40px;
+    transition: all 1s ease-in-out;
+}
+
+.burguer-div{
+    width: 40px;
+    height: 4px;
+    background-color: red;
+    margin-bottom: 5px;
+
+}
+
+.container{
+    margin-top: 0;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
